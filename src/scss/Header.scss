@@ -59,8 +59,8 @@
   .navMenu {
     font-size: 15px;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
 }

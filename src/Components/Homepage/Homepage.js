@@ -188,7 +188,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-            <div style={{textAlign: "center", marginBottom: "50px"}}>
+            <div style={{textAlign: "center", marginBottom: "50px", padding:"0 15px"}}>
                 <div className="content_text" style={{marginBottom: "10px"}}>
                     Имеются противопоказания. Необходима консультация специалиста.
                 </div>
