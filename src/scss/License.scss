@@ -1,0 +1,25 @@
+@import "variables";
+
+.license {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-color: $col-middle;
+  margin-bottom: 150px;
+  .anchor{
+    position: absolute;
+    top: -70px;
+  }
+  img{
+    height: 500px;
+  }
+.lic_img-container{
+  margin-right: 10px;
+  height: 500px;
+}
+}
+.license-container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 30px 50px 0;
+}
