@@ -12,7 +12,7 @@ const Header = () => {
                         <a href="#advantages">Преимущества</a>
                         <a href="#specialists">Специалисты</a>
                         <a href="#services">Услуги</a>
-                        <a href="#license">Лицензии</a>
+                        <a href="#license">Лицензия</a>
                         <div className="dot"></div>
                     </nav>
                 </div>

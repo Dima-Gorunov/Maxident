@@ -11,7 +11,7 @@ function App() {
     return (
         <div>
             <HeaderContainer/>
-            <div className="content-container">
+            <div className="all-content-container">
                 <Routes>
                     <Route index element={<HomepageContainer/>}/>
                     <Route path="*" element={<div>стр не найдена</div>}/>

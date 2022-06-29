@@ -2,7 +2,7 @@
 
 .header {
   width: 100%;
-  background-color: #5F9EA0	;
+  background-color: $col-dark;
   height: 70px;
   position: fixed;
   z-index: 2;
@@ -17,14 +17,16 @@
   justify-content: center;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   align-items: center;
+
   .navMenu {
   }
 
   .navMenu a {
     font-family: "Roboto Bold";
+    text-shadow: 2px 2px 3px #111111 ;
     color: #f6f4e6;
     text-decoration: none;
     font-size: 1.2em;
@@ -39,20 +41,26 @@
 
   .navMenu a:hover {
     color: #111111;
+    text-shadow: 2px 2px 3px #FFFFFF ;
   }
 }
-.address{
+
+.address {
   font-family: "Roboto Bold";
   color: #FFFFFF;
   font-size: 24px;
 }
 
 
-
-
 @media (max-width: 550px) {
-  .address{
+  .address {
     font-size: 20px;
+  }
+  .navMenu {
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 }

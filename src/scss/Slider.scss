@@ -4,13 +4,12 @@
 }
 
 .slider-container {
-  height: 250px;
+  height: 270px;
   background-size: 100% 100%;
   position: relative;
-
   img {
     width: 100%;
-    height: 250px;
+    height: 270px;
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -35,6 +34,7 @@
   font-family: 'Roboto Bold';
 
   .title_text {
+    text-shadow: 2px 2px 3px #111111;
     font-weight: 600;
     font-size: 35px;
     margin-bottom: 20px;
@@ -64,7 +64,7 @@
 
 @media (max-width: 1080px) {
   .slider-container {
-    height: 250px;
+    height: 270px;
   }
   .slider_content-container {
     width: 90%;

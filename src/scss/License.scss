@@ -2,24 +2,182 @@
 
 .license {
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   position: relative;
   background-color: $col-middle;
-  margin-bottom: 150px;
-  .anchor{
+  margin-bottom: 50px;
+
+  .anchor {
     position: absolute;
     top: -70px;
   }
-  img{
-    height: 500px;
+
+  img {
+    width: 300px;
   }
-.lic_img-container{
-  margin-right: 10px;
-  height: 500px;
+
+  .carousel {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  .carousel::-webkit-scrollbar {
+    width: 12px; /* ширина scrollbar */
+  }
+
+  .carousel::-webkit-scrollbar-track {
+    /* цвет дорожки */
+  }
+
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: $col-dark; /* цвет плашки */
+    border-radius: 20px; /* закругления плашки */
+    border: 3px solid $col-middle; /* padding вокруг плашки */
+  }
+
+
+  .lic_img-container {
+    margin-right: 10px;
+
+    &__active {
+      width: 100vw;
+      height: 100vh;
+      min-height: 700px;
+      min-width: 400px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: -50px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 5;
+
+      img {
+        width: 35vw;
+      }
+    }
+
+  }
 }
-}
-.license-container{
+
+.license-container {
   max-width: 1920px;
   margin: 0 auto;
   padding: 30px 50px 0;
+  height: auto;
+}
+
+
+@media (max-width: 500px) {
+
+  .license {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background-color: $col-middle;
+
+    .anchor {
+      position: absolute;
+      top: -70px;
+    }
+
+    img {
+      width: 150px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+
+    .lic_img-container {
+      margin-right: 10px;
+
+      &__active {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+
+        img {
+          width: 80vw;
+        }
+      }
+
+    }
+  }
+  .license-container {
+    padding: 30px 20px 0;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+  .license {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background-color: $col-middle;
+
+    .anchor {
+      position: absolute;
+      top: -70px;
+    }
+
+    img {
+
+    }
+
+    .carousel {
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+
+    .lic_img-container {
+      margin-right: 10px;
+
+      &__active {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+
+        img {
+          width: 80vw;
+        }
+      }
+
+    }
+  }
+  .license-container {
+    padding: 30px 20px 0;
+  }
+
+}
+
+@media (min-width: 1350px) {
+  .carousel{
+    justify-content: center;
+  }
+  
 }
