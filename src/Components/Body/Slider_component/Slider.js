@@ -9,7 +9,7 @@ const Slider = () => {
                 <div className="slider_background"/>
                 <div className="slider_content-container">
                     <div className="slider_content title_text">
-                        В клинике Maxident рады видеть взрослых и детей!
+                        В клинике Maxident ведётся приём взрослого населения!
                     </div>
                     <ul className="sub_title_text" >
                         <li>Осмотр состояния полости рта</li>

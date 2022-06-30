@@ -4,6 +4,8 @@ import BodyBack from "../../img/Body_Backgr/backg.jpg"
 import SliderLicences from "../SliderLicences/SliderLicences";
 import Plug from "../../img/plug.jpg"
 import Female from "../../img/female.jpg"
+import Male from "../../img/male.png"
+
 const Homepage = () => {
     return (
         <div>
@@ -41,21 +43,6 @@ const Homepage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div style={{maxWidth: "400px", display: "flex", marginBottom: "30px"}}>
-                                    <div>
-                                        <img style={{width: "70px"}}
-                                             src="https://static.tildacdn.com/lib/tildaicon/30663338-3561-4630-b330-303335383431/documents.svg"
-                                             alt={Plug}/>
-                                    </div>
-                                    <div>
-                                        <div className="content_text">
-                                            Накопительная система скидок
-                                        </div>
-                                        <div className="sub_title">
-                                            Семейная программа накопления постоянных скидок от суммы расходов
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,17 +54,32 @@ const Homepage = () => {
                     <div className="title_text">
                         Специалисты
                     </div>
-                    <div className="content-container">
-                        <div className="text-container">
-                            <div className="title_text" >
-                                Максимова Ольга Александровна
+                    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-around"}} >
+                        <div className="content-container">
+                            <div className="text-container">
+                                <div className="title_text">
+                                    Максимова Ольга Александровна
+                                </div>
+                                <div className="content_text">
+                                    Врач-стоматолог-терапевт
+                                </div>
                             </div>
-                            <div className="content_text">
-                                Врач-стоматолог-терапевт
+                            <div className="specialists_img">
+                                <img src={Female} alt=""/>
                             </div>
                         </div>
-                        <div className="specialists_img" >
-                            <img src={Female} alt=""/>
+                        <div className="content-container">
+                            <div className="text-container">
+                                <div className="title_text">
+                                    Максимов Игорь Владиславович
+                                </div>
+                                <div className="content_text">
+                                    Врач-стоматолог-ортопед
+                                </div>
+                            </div>
+                            <div className="specialists_img">
+                                <img src={Male} alt=""/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,39 +115,6 @@ const Homepage = () => {
                         </div>
                         <div className="service_component">
                             <div className="img_hov">
-
-                                <div className="title_text">
-                                    Хирургическая стоматология
-                                </div>
-                                <img
-                                    src="https://www.childrensdentalcentre.ca/wp-content/uploads/2020/05/panel-image-1.jpg"
-                                    alt={Plug}/>
-                            </div>
-                        </div>
-                        <div className="service_component">
-                            <div className="img_hov">
-
-                                <div className="title_text">
-                                    Удаление зубов
-                                </div>
-                                <img
-                                    src="http://shopmurman.ru/sites/default/files/styles/business-list-square/public/33210009_l.jpg?itok=XqASZmSW"
-                                    alt={Plug}/>
-                            </div>
-                        </div>
-                        <div className="service_component">
-                            <div className="img_hov">
-
-                                <div className="title_text">
-                                    Имплантация зубов
-                                </div>
-                                <img
-                                    src="https://eryamandentestetik.com/media/image/400x400/album$eryamandentestetik$sayfalar$gulus-tasarimi-eruf7.jpg"
-                                    alt={Plug}/>
-                            </div>
-                        </div>
-                        <div className="service_component">
-                            <div className="img_hov">
                                 <div className="title_text">
                                     Профессиональная чистка зубов
                                 </div>
@@ -176,6 +145,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
             <div className="license">
                 <span id="license" className="anchor"/>
@@ -188,7 +158,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-            <div style={{textAlign: "center", marginBottom: "50px", padding:"0 15px"}}>
+            <div style={{textAlign: "center", marginBottom: "50px", padding: "0 15px"}}>
                 <div className="content_text" style={{marginBottom: "10px"}}>
                     Имеются противопоказания. Необходима консультация специалиста.
                 </div>
